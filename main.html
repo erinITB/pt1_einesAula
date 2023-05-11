@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Temporizador</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<section class="contenedor_ruleta">
+	  <h1>Ruleta de Nombres</h1>
+	  <div class="roulette-container">
+		<ul id="name-list"></ul>
+		<button id="spin-button">Girar</button>
+		<p id="result"></p>
+	  </div>
+	  <script src="./ruleta.js"></script>
+	</section>
+	<section class="reloj">
+		  <div class="reloj-digital">
+			<span id="hora"></span>
+			<span class="separador">:</span>
+			<span id="minuto"></span>
+			<span class="separador">:</span>
+			<span id="segundo"></span>
+		  </div>
+			<script src="./reloj.js"></script>
+	</section>
+	   <section class="temporizador">
+      <h2>TEMPORIZADOR</h2>
+      <form>
+         <label for="end-time">Indica l'hora exacta de finalització:</label><br>
+         <input type="time" id="end-time" name="end-time" step="1" autocomplete="off"><br><br>
+         <label for="duration">Indica quant de temps falta perquè s'acabi la tasca:</label><br>
+         <input type="text" id="duration" name="duration" placeholder="hh:mm:ss"><br><br>
+         <button type="button" onclick="countdown()">EMPEZAR</button>
+      </form>
+      <br>
+      <div id="countdown"></div>
+		   <input type="button" id="pause-button" value="DETENER CONTADOR" onclick="pauseCountdown()" style="display: none;">
+      <audio id="sound">
+         <source src="/multimedia/audio2.mp3" type="audio/ogg">
+      </audio>
+      <script src="./temporizador.js"></script>
+   </section>
+	<section>
+		<!--<a id="my-button" href="./mainOscuro.html" class="rounded">☾</a>-->
+		<button id="my-button" class="rounded">☾</button>
+		<script src="./boton.js"></script>
+	</section>
+</body>
+</html>

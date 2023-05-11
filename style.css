@@ -1,0 +1,494 @@
+body{
+/*background-color: #90F7FF;*/
+background-image: url("./multimedia/fondoAzul.jpg");
+background-size:100%;
+}
+
+
+body.dark-mode{
+background-image: url("./multimedia/fondoGris.jpg");
+background-size:100%;
+}
+
+/* TEMPORIZADOR */
+
+.temporizador {
+  position:absolute;
+  right:10%;
+  top:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:140px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.temporizador button{
+  width:355px;
+  background-color: white;
+  color: blue;
+  font-weight:bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+
+.temporizador button:hover{
+transform: scale(1.05);
+
+}
+
+#pause-button{
+  margin-top:20px;
+  width:355px;
+  background-color: white;
+  color: blue;
+  font-weight:bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#pause-button:hover{
+transform: scale(1.05);
+}
+
+
+hr {
+  width: 100%;
+  border-width: 3px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.temporizador h2 {
+  text-align: center;
+  color:white;
+}
+
+#countdown-timer {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  font-family: "Digital-7 Mono", sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  padding: 10px;
+  max-width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+color: white;
+font-weight: bold;
+}
+
+#countdown{
+color:white;
+font-weight: bold;
+font-size:34px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+/*Temporizador DARK*/
+
+
+.dark-mode .temporizador {
+  position:absolute;
+  right:10%;
+  top:30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom:140px;
+  /*padding-top: 500px;*/
+}
+
+.dark-mode .temporizador button{
+  width:355px;
+  background-color: #06FF8E ;
+  color: black;
+  font-weight:bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+
+.dark-mode .temporizador button:hover{
+transform: scale(1.05);
+
+}
+
+.dark-mode #pause-button{
+  margin-top:20px;
+  width:355px;
+  background-color: #06FF8E;
+  color: black;
+  font-weight:bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode #pause-button:hover{
+transform: scale(1.05);
+}
+
+
+.dark-mode .temporizador h2 {
+  text-align: center;
+  color:#06FF8E;
+}
+
+.dark-mode #countdown-timer {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  font-family: "Digital-7 Mono", sans-serif;
+  letter-spacing: 5px;
+  color: #06FF8E;
+  padding: 10px;
+  max-width: 50%;
+}
+
+.dark-mode form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dark-mode label{
+color: #06FF8E;
+font-weight: bold;
+}
+
+.dark-mode #countdown{
+color:white;
+font-weight: bold;
+font-size:34px;
+text-shadow: 2px 2px 4px rgba(6, 255, 142, 0.8);
+}
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+/* Ruleta */
+
+.contenedor_ruleta h1{
+top:0px;
+left: 15%;
+position:absolute;
+color:white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contenedor_ruleta {
+  text-align: center;
+  padding: 0;
+  padding-top:750px;
+}
+
+
+#roulette-container {
+  left: 50%
+  position: fixed;
+  width: 800px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#name-list {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  z-index:2;
+  color: blue;
+}
+
+#name-list li {
+  position: absolute;
+  width: 240px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: default;
+  transition: all 0.5s ease;
+  list-style: none;
+  font-weight:bold;
+}
+
+#name-list li.current {
+  background-color: blue;
+  color: #fff;
+  font-weight: bold;
+  font-size:18px;
+}
+
+#spin-button {
+  position:absolute;
+  left:17.5%;
+  font-weight:bold;
+  display: relative;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+#spin-button:hover {
+transform: scale(1.05);
+
+}
+
+#result {
+  position:absolute;
+  top:40%;
+  left:42.5%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:white;
+  font-weight:bold;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------*/
+/*RULETA DARK*/
+
+.dark-mode .contenedor_ruleta h1{
+top:0px;
+left: 15%;
+position:absolute;
+color:#06FF8E;
+}
+
+.dark-mode .contenedor_ruleta {
+  text-align: center;
+  padding: 0;
+  padding-top:750px;
+}
+
+
+.dark-mode #roulette-container {
+  left: 50%
+  position: fixed;
+  width: 800px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.dark-mode #name-list {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  z-index:2;
+  color: black;
+}
+
+.dark-mode #name-list li {
+  position: absolute;
+  width: 240px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #06FF8E;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: default;
+  transition: all 0.5s ease;
+  list-style: none;
+  font-weight:bold;
+}
+
+.dark-mode #name-list li.current {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size:18px;
+}
+
+.dark-mode #spin-button {
+  position:absolute;
+  left:17.5%;
+  font-weight:bold;
+  display: relative;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #06FF8E;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
+.dark-mode #spin-button:hover {
+transform: scale(1.05);
+
+}
+
+.dark-mode #result {
+  position:absolute;
+  left:42.5%;
+  top:40%;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:white;
+  font-weight:bold;
+}
+
+
+.dark-mode #start-button{
+background-color:#06FF8E;
+}
+
+
+
+/*---------------------botón-----------------------------------------------------------------*/
+
+#my-button {
+  width: 45px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 26px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#my-button:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 20%;
+}
+
+/*---------------------DARK botón-----------------------------------------------------------------*/
+.dark-mode #my-button {
+  width: 45px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 26px;
+  background-color: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dark-mode #my-button:hover {
+  background-color: #4CA8FF;
+  cursor: pointer;
+}
+
+.dark-mode .rounded {
+  border-radius: 20%;
+}
+
+/*RELOJ-------------------------------------------------------*/
+
+.reloj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.reloj-digital {
+  font-family: 'Exo', sans-serif;
+  font-size: 64px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.separador {
+  margin: 0 10px;
+}
+
+
+/*darkRELOJ-------------------------------------------------------*/
+
+.dark-mode .reloj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.dark-mode .reloj-digital {
+  font-family: 'Exo', sans-serif;
+  font-size: 64px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(6, 255, 142, 0.8);
+}
+
+.dark-mode .separador {
+  margin: 0 10px;
+}
